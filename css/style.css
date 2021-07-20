@@ -1,22 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.center{
-margin: auto;
+.center {
+  margin: auto;
 }
-.nav-item{
-    margin-right: 100px;
-    margin-top: 10px;
+.nav-item {
+  margin-right: 100px;
+  margin-top: 10px;
 }
 .btn {
-    border: 1px solid rgb(27, 165, 230);
-    color: rgb(27, 165, 230);
-   }
-.btn:hover{
-    background-color: rgb(142, 202, 230);
+  border: 1px solid rgb(27, 165, 230);
+  color: rgb(27, 165, 230);
+}
+.btn:hover {
+  background-color: rgb(142, 202, 230);
+}
+/* SECTION 1  ABOUT*/
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin-top: 50px;
+}
+.photo {
+  max-width: 550px;
+  width: 100%;
+}
+.photo img {
+  width: 100%;
+}
+.text {
+  max-width: 550px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* SECTION__2 OUR SERVICES */
+
+.our__services {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.services__h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+.services {
+  max-width: 350px;
+  width: 100%;
+  transition: 0.5s;
+  padding-bottom: 20px;
+}
+.services:hover {
+  transform: translateY(-5%);
+  -webkit-box-shadow: 2px 2px 13px 4px rgba(0, 0, 0, 0.58);
+  box-shadow: 2px 2px 13px 4px rgba(0, 0, 0, 0.58);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.services__img {
+  max-width: 350px;
+  width: 100%;
+}
+.services__img img {
+  width: 100%;
+}
+.ser__block__h1 {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+}
+.get__in__tuch {
+  background: none;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  outline: none;
+  border: 1px solid #000;
+  transition: 0.5s;
+}
+.get__in__tuch:hover {
+  background-color: rgba(0, 0, 0, 0.292);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+}
+
+/* АДАПТИВКА */
+@media (max-width: 1160px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+  .text {
+    font-size: 15px;
+  }
 }
