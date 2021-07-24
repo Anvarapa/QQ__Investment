@@ -20,7 +20,7 @@
     <title>QQ Investments INC</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar__stiky">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img src="./img/Group 1.svg" alt="" width="150px"
@@ -37,7 +37,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 center__ul">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#about__2"
                 >ABOUT</a
@@ -47,12 +47,12 @@
               <a class="nav-link" href="#our__services">OUR SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACTS</a>
+              <a class="nav-link" href="#contacts">OUR CONTACTS</a>
             </li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex" action="#send__m">
             <button class="btn btn-outline-success" type="submit">
-              CONTACT US
+              Send message
             </button>
           </form>
         </div>
@@ -66,7 +66,7 @@
           <img src="./img/truck__photo-min (1).jpg" alt="" />
         </div>
         <div class="text">
-          <h1>QQ Investments Inc.</h1>
+          <h1 class="qq__h1">QQ Investments Inc.</h1>
           <p>
             ‘QQ Investments Inc’ started in 2021 with one target—to disentangle
             transportation the board. Across the nation, dock to dock, and over
@@ -85,37 +85,70 @@
         </div>
       </div>
       <!-- SECTION__2 -->
-      <h1 class="services__h1">OUR SERVICES</h1>
+      <h1 class="menu__name__h1">OUR SERVICES</h1>
       <div class="our__services" id="our__services">
-       <div class="services">
-         <div class="services__img">
-           <img src="./img/marketing__1.jpg" alt="">
-         </div>
-         <h1 class="ser__block__h1">
-           MARKETING
-         </h1>
-         <button class="get__in__tuch">Get in Touch</button>
-       </div>
-       <div class="services">
-        <div class="services__img">
-          <img src="./img/design.jpg" alt="">
+        <div class="services">
+          <div class="services__img">
+            <img src="./img/marketing__1.jpg" alt="" />
+          </div>
+          <h1 class="ser__block__h1">MARKETING</h1>
+          <button class="get__in__tuch">Get in Touch</button>
         </div>
-        <h1 class="ser__block__h1">
-          DESIGN
-        </h1>
-        <button class="get__in__tuch">Get in Touch</button>
-      </div>
-      <div class="services">
-        <div class="services__img">
-          <img src="./img/marketing__1.jpg" alt="">
+        <!-- 2-class -->
+        <div class="services midle">
+          <div class="services__img">
+            <img src="./img/design.jpg" alt="" />
+          </div>
+          <h1 class="ser__block__h1">DESIGN</h1>
+          <button class="get__in__tuch">Get in Touch</button>
         </div>
-        <h1 class="ser__block__h1">
-          BRANDING
-        </h1>
-        <button class="get__in__tuch">Get in Touch</button>
+        <div class="services">
+          <div class="services__img">
+            <img src="./img/marketing__1.jpg" alt="" />
+          </div>
+          <h1 class="ser__block__h1">BRANDING</h1>
+          <button class="get__in__tuch">Get in Touch</button>
+        </div>
       </div>
+      <!-- SECTION__3 -->
+      <h1 class="menu__name__h1">OUR CONTACTS</h1>
+      <div class="contacts" id="contacts">
+        <div class="dispatcher__img">
+          <img src="./img/Dispatcher-min.jpg" alt="" />
+        </div>
+        <div class="email__phone">
+          <h1 class="text__email__phone">PHONE NUMBER:</h1>
+          <div class="tell">
+            <a href="tel:17738177352">+1 (773) 817-7352</a>
+          </div>
+          <div class="tell"><a href="tel:2248173325">2248173325</a></div>
+          <h1 class="text__email__phone">EMAIL</h1>
+          <a href="mailto:info@qqinvestments.com">info@qqinvestments.com</a>
+        </div>
+      </div>
+
+      <!-- SECTION__4 -->
+      <h1 class="menu__name__h1">SEND MESSAGE</h1>
+      <div class="send__m" id="send__m">
+        <input required class="input" type="text" placeholder="First name" />
+        <input required class="input" type="text" placeholder="Last name" />
+        <input required class="input" type="text" placeholder="Phone number" />
+        <input required class="input" type="text" placeholder="Email address" />
+        <textarea
+          required
+          class="message"
+          name="text"
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+        ></textarea>
+        <button class="send">SEND</button>
       </div>
     </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer__text">©2021 by Turdaliev Anvar.</p>
+    </footer>
     <script src="./js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
