@@ -54,7 +54,7 @@ body {
   width: 100%;
 }
 .text {
-  max-width: 550px;
+  max-width: 540px;
   font-size: 15px;
   margin-left: 10px;
 }
@@ -73,6 +73,7 @@ body {
   width: 100%;
   transition: 0.5s;
   padding-bottom: 20px;
+  border: 1px solid #000;
 }
 .services:hover {
   transform: translateY(-5%);
@@ -85,8 +86,9 @@ body {
   max-width: 350px;
   width: 100%;
 }
-.services__img img {
+.services__img>img {
   width: 100%;
+  height: 200px;
 }
 .ser__block__h1 {
   font-size: 30px;
@@ -109,6 +111,10 @@ body {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 5px;
+}
+.get__in__tuch>a{
+  text-decoration: none;
+  color: rgb(58, 56, 56);
 }
 
 /* SECTION 3 */
