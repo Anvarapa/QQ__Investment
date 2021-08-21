@@ -129,21 +129,20 @@
 
       <!-- SECTION__4 -->
       <h1 class="menu__name__h1">SEND MESSAGE</h1>
-      <div class="send__m" id="send__m">
-        <input required class="input" type="text" placeholder="First name" />
-        <input required class="input" type="text" placeholder="Last name" />
-        <input required class="input" type="tel" placeholder="Phone number" />
-        <input required class="input" type="email" placeholder="Email address" />
+          <form class="send__m" id="send__m" action="https://formspree.io/f/mleaoagz"
+      method="POST">
+        <input required class="input" type="text" name="name" placeholder="First name" />
+        <input required class="input" type="email" name="_replyto" placeholder="Email address" />
         <textarea
           required
           class="message"
-          name="text"
+          name="message"
           cols="30"
           rows="10"
           placeholder="Your message"
         ></textarea>
-        <button class="send">SEND</button>
-      </div>
+        <input class="send" type="submit" value="Send">
+      </form>
     </div>
     <!-- FOOTER -->
     <footer class="footer">
